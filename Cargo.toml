@@ -1,0 +1,22 @@
+[package]
+name = "alparworkforceserver"
+version = "0.0.1"
+authors = ["abraao.isvi <abraao.isvi@gmail.com>"]
+
+[dependencies]
+getopts = "*"
+rusqlite = "*"
+time = {version = "*", features = ["rustc-serialize"]}
+rustc-serialize = "*"
+regex = "*"
+
+[dependencies.nickel]
+
+path = "../nickel"
+
+[dependencies.nickel_macros]
+
+path = "../nickel/nickel_macros"
+
+[[bin]]
+name = "alparserver"
